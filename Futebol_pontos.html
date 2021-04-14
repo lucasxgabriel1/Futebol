@@ -1,0 +1,43 @@
+<meta charset="utf-8">
+
+<h1>Futebol, calculo de pontos</h1>
+
+<script>
+	function pulaLinha() {
+
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+	
+	var vitoria = parseInt(prompt("Quantas vitorias seu clube teve na temporada ?"));
+	var empate = parseInt(prompt("Quantos empates seu clube teve na temporada ?"));
+
+	var pontos = ( vitoria * 3) + empate; 
+
+
+	if (pontos >= 30){
+
+		mostra("Parabens, seu clube está na serie A");
+	}
+
+	if (pontos < 29){
+
+		mostra("Seu clube esta na serie B , treine-os mais");
+	}
+
+
+	if (pontos < 18){
+
+		mostra("Seu clube está muito ruim , repense suas estrategias");
+	}
+
+
+
+
+
+</script>
